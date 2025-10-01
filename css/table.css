@@ -46,8 +46,7 @@
   color: #555;
 }
 
-.price-table tbody tr td:nth-child(3),
-.price-table tbody tr td:nth-child(5) {
+.price-table tbody tr td:nth-child(odd){
   background-color: #f7f7f7;
 }
 
