@@ -1,0 +1,229 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 73px;
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.header-container {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo { margin-right: 40px; }
+
+.nav {
+  font-weight: bold;
+  font-size: 14px;
+  color: #18191F;
+  margin-top: -4px;
+  display: flex;
+}
+
+.nav-link {
+  margin-right: 32px;
+  color: #18191F;
+  text-decoration: none;
+}
+
+.nav-link:hover { color: #8C30F5; }
+.nav-link:last-child { margin-right: 0; }
+
+.appstore {
+  margin-left: auto;
+  display: flex;
+}
+
+.appstore-item { margin: 5px 0 5px 12px; }
+.appstore-item:first-child { margin-left: 0; }
+.appstore-item:hover { opacity: 0.5; }
+
+
+.main-container {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.main-content {
+  width: 540px;
+  font-size: 18px;
+  color: #18191F;
+}
+
+.main-header {
+  margin: 0 0 16px;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 1.36;
+  color: #18191F;
+}
+
+.main-text {
+  margin-bottom: 32px;
+}
+
+.main-text p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.button {
+  display: inline-block;
+  padding: 0 35px;
+  height: 62px;
+  line-height: 62px;
+  background: #8C30F5;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover { opacity: 0.8; }
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  background: #0B0D17;
+  color: #D9D8E1;
+}
+
+.footer-container {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-socials { display: flex; }
+.footer-socials-item { margin-left: 16px; }
+.footer-socials-item:hover { opacity: 0.5; }
+
+@media (max-width: 768px) {
+  .header-container,
+  .main-container,
+  .footer-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .header { height: auto; padding: 12px 0; }
+
+  .logo { margin-bottom: 12px; }
+
+  .nav {
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .appstore {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .main-content {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .main-header {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .appstore-item img {
+    height: 40px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header { font-size: 28px; }
+  .nav-link { font-size: 16px; }
+  .button {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .appstore-item img { height: 36px; }
+}

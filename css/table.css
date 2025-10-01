@@ -1,0 +1,80 @@
+/* === Price Table === */
+.price-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.40);
+  overflow: hidden;
+  table-layout: fixed;  
+}
+
+.price-table thead th {
+  background-color: #9E9AC2;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px 12px;
+  line-height: 30px;    
+}
+
+.price-table thead strong {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.price-table thead th:nth-child(2) { background-color: #8681B3; }
+.price-table thead th:nth-child(3) { background-color: #6A63A1; }
+.price-table thead th:nth-child(4) { background-color: #4F4891; }
+.price-table thead th:nth-child(5) { background-color: #3D3585; }
+
+.price-table tbody td {
+  text-align: center;
+  padding: 18px 12px;
+  font-size: 15px;
+  color: #4d4d4d;
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.price-table tbody tr td:first-child {
+  text-align: left;
+  background-color: #f7f7f7;
+  font-weight: 600;
+  color: #555;
+}
+
+.price-table tbody tr td:nth-child(3),
+.price-table tbody tr td:nth-child(5) {
+  background-color: #f7f7f7;
+}
+
+.price-table tbody tr:last-child td {
+  background-color: #f7f7f7;
+  border-bottom: none;
+}
+
+.price-table td.no,
+.price-table td.yes {
+  color: #3D3585;
+  font-weight: bold;
+}
+
+.price-table button {
+  font-family: 'Manrope', sans-serif;
+  background-color: #d0c9ff;
+  color: gray;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.price-table button:hover {
+  background-color: #b5a4e5;
+}
